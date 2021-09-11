@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollView_Learn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSA-Uv-Vms">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1456"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGi-RG-27S" userLabel="ContainerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1872.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스크롤뷰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PA6-ZL-Hbo">
+                                                <rect key="frame" x="10" y="10" width="59" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7J-fn-pTF">
+                                                <rect key="frame" x="10" y="41" width="390" height="203"/>
+                                                <string key="text">- 스크롤 가능한 컨텐트 뷰를 제공해야 스크롤뷰가 제대로 작동 - - 컨텐트 레이아웃 - 스크롤 가능한 사이즈 - 프레임 레이아웃 - 부모뷰와 관련있는 스크롤뷰의 사이즈   - 컨테트 레이아웃 크기를 설정해줘야 한다. - 스크롤뷰 안에 들어가는 내용물과 탑, 바텀 앵커를 컨텐트 레이아웃의 바텀, 탑 앵커와 일치 시켜야한다.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS UIKit Autolayout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sA-a5-Au5">
+                                                <rect key="frame" x="10" y="259" width="165.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="핵심  해당 뷰의 x, y 위치 해당 뷰의 가로, 세로 크기" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23b-V6-xiu">
+                                                <rect key="frame" x="10" y="290" width="394" height="81.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyE-2M-tGI">
+                                                <rect key="frame" x="10" y="381.5" width="394" height="1481"/>
+                                                <mutableString key="text">What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="PA6-ZL-Hbo" firstAttribute="top" secondItem="SGi-RG-27S" secondAttribute="top" constant="10" id="3wy-SA-mnu"/>
+                                            <constraint firstItem="v7J-fn-pTF" firstAttribute="top" secondItem="PA6-ZL-Hbo" secondAttribute="bottom" constant="10" id="4ud-bB-gFY"/>
+                                            <constraint firstItem="pyE-2M-tGI" firstAttribute="leading" secondItem="23b-V6-xiu" secondAttribute="leading" id="8Z5-Ui-h2R"/>
+                                            <constraint firstItem="v7J-fn-pTF" firstAttribute="leading" secondItem="PA6-ZL-Hbo" secondAttribute="leading" id="APc-pv-48C"/>
+                                            <constraint firstItem="pyE-2M-tGI" firstAttribute="top" secondItem="23b-V6-xiu" secondAttribute="bottom" constant="10" id="Fca-df-yQM"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pyE-2M-tGI" secondAttribute="trailing" constant="10" id="HiH-eP-umw"/>
+                                            <constraint firstItem="PA6-ZL-Hbo" firstAttribute="leading" secondItem="SGi-RG-27S" secondAttribute="leading" constant="10" id="IJL-ax-vl2"/>
+                                            <constraint firstItem="23b-V6-xiu" firstAttribute="top" secondItem="6sA-a5-Au5" secondAttribute="bottom" constant="10" id="N30-eT-bXB"/>
+                                            <constraint firstAttribute="trailing" secondItem="23b-V6-xiu" secondAttribute="trailing" constant="10" id="Qgg-95-6SR"/>
+                                            <constraint firstItem="6sA-a5-Au5" firstAttribute="top" secondItem="v7J-fn-pTF" secondAttribute="bottom" constant="15" id="aVd-bI-aW9"/>
+                                            <constraint firstAttribute="bottom" secondItem="pyE-2M-tGI" secondAttribute="bottom" constant="10" id="dw2-2q-Ari"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="v7J-fn-pTF" secondAttribute="trailing" constant="10" id="mCX-zz-npm"/>
+                                            <constraint firstItem="6sA-a5-Au5" firstAttribute="leading" secondItem="v7J-fn-pTF" secondAttribute="leading" id="rsJ-nj-JYO"/>
+                                            <constraint firstItem="23b-V6-xiu" firstAttribute="leading" secondItem="6sA-a5-Au5" secondAttribute="leading" id="s6c-oO-tSY"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6sA-a5-Au5" secondAttribute="trailing" constant="10" id="tzy-kr-aN1"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PA6-ZL-Hbo" secondAttribute="trailing" constant="10" id="uIV-E4-u00"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SGi-RG-27S" firstAttribute="top" secondItem="Qvf-ar-8uq" secondAttribute="top" id="61O-Gt-RfC"/>
+                                    <constraint firstItem="SGi-RG-27S" firstAttribute="leading" secondItem="Qvf-ar-8uq" secondAttribute="leading" id="EAE-CE-GqD"/>
+                                    <constraint firstItem="SGi-RG-27S" firstAttribute="width" secondItem="mK9-TX-99b" secondAttribute="width" id="MAc-vU-rcg"/>
+                                    <constraint firstItem="SGi-RG-27S" firstAttribute="trailing" secondItem="Qvf-ar-8uq" secondAttribute="trailing" id="TKL-Tq-QKS"/>
+                                    <constraint firstItem="SGi-RG-27S" firstAttribute="bottom" secondItem="Qvf-ar-8uq" secondAttribute="bottom" id="gDc-11-hVu"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Qvf-ar-8uq"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="mK9-TX-99b"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dSA-Uv-Vms" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1ee-NA-BgM"/>
+                            <constraint firstItem="dSA-Uv-Vms" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DVF-PB-97x"/>
+                            <constraint firstItem="dSA-Uv-Vms" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jk1-S9-SoN"/>
+                            <constraint firstItem="dSA-Uv-Vms" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="Thu-pi-V6b"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="1500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
